@@ -1,7 +1,13 @@
 {
     "name": "yiisoft/yii2-mongodb",
     "description": "MongoDB extension for the Yii framework",
-    "keywords": ["yii2", "mongo", "mongodb", "active-record", "gridfs"],
+    "keywords": [
+        "yii2",
+        "mongo",
+        "mongodb",
+        "active-record",
+        "gridfs"
+    ],
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "support": {
@@ -17,6 +23,7 @@
             "email": "klimov.paul@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "php": ">=8.1",
         "ext-mongodb": ">=1.20.1",
@@ -30,7 +37,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "22.2.x-dev"
+            "dev-master": "22.0.x-dev"
         }
     },
     "config": {
