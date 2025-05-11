@@ -634,9 +634,7 @@ class QueryRunTest extends TestCase
             ->from('customer')
             ->distinct('group', $db);
 
-        sort($rows);
-
-        $this->assertEquals(['odd', 'even'], $rows, '', 0.0, 10, true);
+        $this->assertEquals(['even', 'odd'], $rows, '', 0.0, 10, true);
     }
 
     public function testAggregationShortcuts()
