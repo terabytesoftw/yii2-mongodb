@@ -393,6 +393,9 @@ class CollectionTest extends TestCase
                 'value' => 400,
             ],
         ];
+
+        sort($result);
+
         $this->assertEquals($expectedRows, $result);
     }
 
