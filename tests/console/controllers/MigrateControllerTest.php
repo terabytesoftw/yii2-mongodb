@@ -379,7 +379,7 @@ CODE;
         ]);
         $files = FileHelper::findFiles($this->migrationPath);
         $fileContent = file_get_contents($files[0]);
-        $this->assertStringNotContainsString("namespace {$this->migrationNamespace};", $fileContent);
+        $this->assertStringContainsString("namespace {$this->migrationNamespace};", $fileContent);
         unlink($files[0]);
 
         // no namespace:
